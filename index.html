@@ -11,41 +11,215 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<!--<header>-->
+<!--    <div class="container">-->
+<!--        <div class="top_head">-->
+<!--            <div class="logo">-->
+<!--                <a href="/">-->
+<!--                    <img src="img/logo_m.png" alt="logo">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <nav>-->
+<!--                <ul>-->
+<!--                    <li><a href="">Заявка</a></li>-->
+<!--                    <li><a href="">Запчасти</a></li>-->
+<!--                    <li><a href="">Ремонт</a></li>-->
+<!--                    <li><a href="">Уход</a></li>-->
+<!--                    <li><a href="">Тюнинг</a></li>-->
+<!--                </ul>-->
+<!--            </nav>-->
+<!--            <div class="user_concret">-->
+<!--                <div class="user_marker">-->
+<!--                    <span><i class="fa fa-map-marker" aria-hidden="true"></i> Нижний Новгород</span>-->
+<!--                </div>-->
+<!--                <div class="user_account">-->
+<!--                    <a href="">-->
+<!--                        <img src="img/user_acc.png" alt="">-->
+<!--                        <i class="fa fa-angle-down" aria-hidden="true"></i>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</header>-->
+<section id="banner_main">
     <div class="container">
-        <div class="top_head">
-            <div class="logo">
-                <a href="/">
-                    <img src="img/logo_m.png" alt="logo">
-                </a>
-            </div>
-            <nav>
+        <h1>Ремонт автомобиля легко и дешево</h1>
+        <div class="search_repair">
+            <div class="hint">
                 <ul>
-                    <li><a href="">Заявка</a></li>
-                    <li><a href="">Запчасти</a></li>
-                    <li><a href="">Ремонт</a></li>
-                    <li><a href="">Уход</a></li>
-                    <li><a href="">Тюнинг</a></li>
+                    <li class="active_search" data-place="Введите артикул запчасти" class="active_search"><a href="#">Поиск по артикулу</a></li>
+                    <li data-place="Введите VIN"><a href="#">VIN поиск</a></li>
+                    <li data-place="Введите название запчасти"><a href="#">Заявка на запчасть/ремонт</a></li>
                 </ul>
-            </nav>
-            <div class="user_concret">
-                <div class="user_marker">
-                    <span><i class="fa fa-map-marker" aria-hidden="true"></i> Нижний Новгород</span>
+            </div>
+            <div class="search_field">
+                <input type="text" placeholder="Введите артикул запчасти">
+                <button><i class="fa fa-search" aria-hidden="true"></i> Найти</button>
+            </div>
+            <div class="rep_advantages">
+                <div class="rep_advantages-item">
+                    <div class="logo_adv">
+                        <img src="img/adv_map.png" alt="marker">
+                    </div>
+                    <div class="text_adv">
+                        <h6>15 000+</h6>
+                        <p>Автосервисов в городах</br>
+                            России и стран СНГ</p>
+                    </div>
                 </div>
-                <div class="user_account">
-                    <a href="">
-                        <img src="img/user_acc.png" alt="">
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </a>
+                <div class="rep_advantages-item">
+                    <div class="logo_adv">
+                        <img src="img/adv_clock.png" alt="marker">
+                    </div>
+                    <div class="text_adv">
+                        <h6>10 мин</h6>
+                        <p>Среднее время ответа</br>
+                            автосервиса на заявку</p>
+                    </div>
+                </div>
+                <div class="rep_advantages-item">
+                    <div class="logo_adv">
+                        <img src="img/adv_earth.png" alt="marker">
+                    </div>
+                    <div class="text_adv">
+                        <h6>400 000+</h6>
+                        <p>Заявок оформили автовладельцы</br>
+                            на портале carmont.ru</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="main_banner">
-            
         </div>
     </div>
-</header>
+</section>
+<section id="popular-auto">
+    <div class="container">
+        <h3>Популярные марки</h3>
+        <div class="popular-list">
+            <div class="popular_item">
+                <div class="model_letter"><span>A</span></div>
+                <ul>
+                    <li><a href="#">AC</a></li>
+                    <li><a href="#">ACURA</a></li>
+                    <li><a href="#">ALFA ROMEO</a></li>
+                    <li><a href="#">ALPINA</a></li>
+                    <li><a href="#">AMC</a></li>
+                    <li><a href="#">ASTON MARTIN</a></li>
+                    <li><a href="#">AUDI</a></li>
+                </ul>
+            </div>
+            <div class="popular_item">
+                <div class="model_letter"><span>B</span></div>
+                <ul>
+                    <li><a href="#">BAW</a></li>
+                    <li><a href="#">BENTLEY</a></li>
+                    <li><a href="#">BERTONE</a></li>
+                    <li><a href="#">BMW</a></li>
+                    <li><a href="#">BRILLIANCE</a></li>
+                    <li><a href="#">BUGATTI</a></li>
+                    <li><a href="#">BUICK</a></li>
+                </ul>
+            </div>
+            <div class="popular_item">
+                <div class="model_letter"><span>C</span></div>
+                <ul>
+                    <li><a href="#">CADILLAC</a></li>
+                    <li><a href="#">CHANGAN</a></li>
+                    <li><a href="#">CHANGFENG</a></li>
+                    <li><a href="#">CHERY</a></li>
+                    <li><a href="#">CHEVROLET</a></li>
+                    <li><a href="#">CHRYSLER</a></li>
+                    <li><a href="#">CITROËN</a></li>
+                </ul>
+            </div>
+            <div class="popular_item">
+                <div class="model_letter"><span>D</span></div>
+                <ul>
+                    <li><a href="#">DACIA</a></li>
+                    <li><a href="#">DADI</a></li>
+                    <li><a href="#">DAEWOO</a></li>
+                    <li><a href="#">DAF</a></li>
+                    <li><a href="#">DAIHATSU</a></li>
+                    <li><a href="#">DATSUN</a></li>
+                    <li><a href="#">DE LOREAN</a></li>
+                </ul>
+            </div>
+            <div class="popular_item">
+                <div class="model_letter"><span>E</span></div>
+                <ul>
+                    <li><a href="#">EAGLE</a></li>
+                    <li><a href="#">EMGRAND (GEELY)</a></li>
+                </ul>
+            </div>
+            <div class="popular_item">
+                <div class="model_letter"><span>F</span></div>
+                <ul>
+                    <li><a href="#">FAW</a></li>
+                    <li><a href="#">FAW JILIN</a></li>
+                    <li><a href="#">FAW TIANJIN</a></li>
+                    <li><a href="#">FERRARI</a></li>
+                    <li><a href="#">FIAT</a></li>
+                    <li><a href="#">FORD</a></li>
+                    <li><a href="#">FORD USA</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#" class="watch_all_model">
+            <span>Смотреть полный список</span>
+        </a>
+    </div>
+</section>
+<section id="how-run">
+    <div class="container">
+        <h3>Как это работает?</h3>
+        <div class="wrap-how-run">
+            <div class="steps">
+                <div class="step-item">
+                    <div class="step-num">
+                        <span>1</span>
+                    </div>
+                    <div class="step-txt">
+                        <h6>Создаем запрос</h6>
+                        <p>В пару кликов создаем запрос на необходимые
+                            запчасти или услуги по ремонту авто</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">
+                        <span>2</span>
+                    </div>
+                    <div class="step-txt">
+                        <h6>Получаем ответы</h6>
+                        <p>На Ваш запрос отвечают тысячи магазинов и сотни автосервисов</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">
+                        <span>3</span>
+                    </div>
+                    <div class="step-txt">
+                        <h6>Выбираем лучшее</h6>
+                        <p>Выбираем лучшее предложение по цене,
+                            расположению, рейтингам и отзывам о компании</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">
+                        <span>4</span>
+                    </div>
+                    <div class="step-txt">
+                        <h6>Успешный выбор</h6>
+                        <p>Экономите время и деньги не снижая качество
+                            запчастей или услуг автосервиса</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video_description">
 
+            </div>
+        </div>
+    </div>
+</section>
 <script
         src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="

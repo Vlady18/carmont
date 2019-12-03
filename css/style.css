@@ -10,6 +10,10 @@
   font-family: "latobold";
   src: url("../fonts/latobold.woff") format("woff"), url("../fonts/latobold.ttf") format("truetype"), url("../fonts/latobold.woff2") format("woff2");
 }
+@font-face {
+  font-family: "latosemibold";
+  src: url("../fonts/latosemibold.woff") format("woff"), url("../fonts/latosemibold.ttf") format("truetype"), url("../fonts/latosemibold.woff2") format("woff2");
+}
 body {
   margin: 0;
   padding: 0;
@@ -201,6 +205,238 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
   border-radius: 50%;
   color: #fff;
   text-align: center;
+}
+
+#banner_main {
+  background: url(../img/banner_bg.png) no-repeat center/cover;
+  padding-top: 100px;
+  padding-bottom: 65px;
+}
+#banner_main h1 {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-family: "latosemibold";
+  margin-bottom: 55px;
+  font-size: 46px;
+}
+#banner_main .search_repair {
+  max-width: 1005px;
+  margin: 0 auto;
+}
+#banner_main .search_repair .hint {
+  margin-bottom: 15px;
+}
+#banner_main .search_repair .hint ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+#banner_main .search_repair .hint ul li {
+  color: #535353;
+  font-family: "latoregular";
+  font-size: 12px;
+  padding: 9px 15px;
+  text-transform: uppercase;
+}
+#banner_main .search_repair .hint ul li a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #535353;
+  padding-bottom: 9px;
+}
+#banner_main .search_repair .hint ul li.active_search {
+  background: #1565c0;
+  border-radius: 6px;
+}
+#banner_main .search_repair .hint ul li.active_search a {
+  border-bottom: 0;
+  color: #fff;
+  text-decoration: none;
+}
+#banner_main .search_repair .search_field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 150px;
+}
+#banner_main .search_repair .search_field input {
+  display: block;
+  color: #3e4043;
+  font-family: "latolight";
+  font-size: 15px;
+  line-height: 30px;
+  -webkit-box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.09);
+  background-color: #ffffff;
+  border: 0;
+  outline: none;
+  padding: 0px 30px;
+  height: 60px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  width: 810px;
+}
+#banner_main .search_repair .search_field button {
+  display: block;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 195px;
+  color: #ffffff;
+  font-family: "latobold";
+  font-size: 20px;
+  line-height: 30px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1565c0), to(#2779d6));
+  background: linear-gradient(to top, #1565c0 0%, #2779d6 100%);
+}
+#banner_main .search_repair .rep_advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#banner_main .search_repair .rep_advantages .rep_advantages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#banner_main .search_repair .rep_advantages .rep_advantages-item .logo_adv {
+  margin-top: 3px;
+}
+#banner_main .search_repair .rep_advantages .rep_advantages-item .text_adv {
+  margin-left: 20px;
+}
+#banner_main .search_repair .rep_advantages .rep_advantages-item .text_adv h6 {
+  color: #ffffff;
+  font-family: "latobold";
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#banner_main .search_repair .rep_advantages .rep_advantages-item .text_adv p {
+  color: #ffffff;
+  margin: 0;
+  font-family: "latolight";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#popular-auto {
+  padding: 60px 0px;
+}
+#popular-auto h3 {
+  color: #171a1d;
+  margin: 0;
+  font-family: "latobold";
+  font-size: 33px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+#popular-auto .popular-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#popular-auto .popular-list .popular_item ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  list-style: none;
+}
+#popular-auto .popular-list .popular_item ul li a {
+  color: #006bc2;
+  font-family: "latolight";
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+#popular-auto .popular-list .popular_item .model_letter span {
+  color: #171a1d;
+  font-family: "latobold";
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+#popular-auto .watch_all_model {
+  border: 1px solid #dbe1eb;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 8px 0px;
+  margin-top: 15px;
+}
+#popular-auto .watch_all_model span {
+  text-align: center;
+  color: #006bc2;
+  font-family: "latolight";
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #006bc2;
+}
+
+#how-run {
+  padding-top: 63px;
+  padding-bottom: 77px;
+  background: url(../img/how_bg.png) no-repeat center/cover;
+}
+#how-run h3 {
+  color: #ffffff;
+  font-family: "latobold";
+  font-size: 33px;
+  line-height: 24px;
+}
+#how-run .wrap-how-run .steps .step-item {
+  background: url("../img/line_dashed.png") repeat-y 17px 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 35px;
+}
+#how-run .wrap-how-run .steps .step-item:last-child {
+  background: none;
+}
+#how-run .wrap-how-run .steps .step-item .step-num {
+  margin-right: 15px;
+  background-color: #f5f5f5;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  text-align: center;
+}
+#how-run .wrap-how-run .steps .step-item .step-num span {
+  color: #1565c0;
+  font-family: "latobold";
+  font-size: 20px;
+  line-height: 36px;
+}
+#how-run .wrap-how-run .steps .step-item .step-txt h6 {
+  margin: 0;
+  color: #ffffff;
+  font-family: "latobold";
+  font-size: 20px;
+}
+#how-run .wrap-how-run .steps .step-item .step-txt p {
+  color: #ffffff;
+  font-family: "latoregular";
+  font-size: 15px;
+  max-width: 360px;
+  line-height: 24px;
 }
 
 @media all and (max-width: 830px) {
