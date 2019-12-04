@@ -22,7 +22,24 @@ body
   box-sizing: border-box
 p
   margin: 0
-
+.large_button
+  border: 1px solid #dbe1eb
+  text-align: center
+  display: block
+  text-decoration: none
+  padding: 8px 0px
+  margin-top: 15px
+  border-radius: 5px
+  span
+    text-align: center
+    //display: block
+    color: #006bc2
+    font-family: 'latolight'
+    font-size: 14px
+    line-height: 27px
+    text-decoration: none
+    padding-bottom: 1px
+    border-bottom: 1px solid #006bc2
 header
   .top_head
     .logo
@@ -318,6 +335,9 @@ header.search_head
     font-size: 33px
     line-height: 24px
   .wrap-how-run
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
     .steps
       .step-item
         background: url("../img/line_dashed.png") repeat-y 17px 50%
@@ -344,18 +364,102 @@ header.search_head
             color: #ffffff
             font-family: 'latobold'
             font-size: 20px
-            //line-height: 36px
+            margin-bottom: 8px
+            margin-top: 5px
           p
             color: #ffffff
             font-family: 'latoregular'
             font-size: 15px
             max-width: 360px
             line-height: 24px
+    .video_description
+      box-shadow: 0 0 27px rgba(0, 0, 0, 0.17)
+      iframe
+        display: block
+        width: 650px
+        max-width: 100%
+        height: 365px
+#popular-category
+  padding-top: 70px
+  padding-bottom: 50px
+  h3
+    color: #171a1d
+    font-family: 'latobold'
+    font-size: 33px
+    line-height: 24px
+    margin: 0
+    margin-bottom: 45px
+  .wrap_popular-company
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    .popular_company-item
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 25%
+      margin-bottom: 25px
+      .popular_item-txt
+        h5
+          color: #3c434c
+          font-family: 'latobold'
+          margin: 0
+          font-size: 20px
+          line-height: 24px
+          margin-top: 12px
+          margin-bottom: 10px
 
-
-
-
-
+        ul
+          margin: 0
+          padding: 0
+          list-style: none
+          li
+            //line-height: 27px
+            margin-bottom: 10px
+            a
+              color: #006bc2
+              font-family: 'latolight'
+              font-size: 16px
+              line-height: 18px
+              text-decoration: underline
+              line-height: 18px
+  .watch_all_categ
+    margin-top: 15px
+#what_say
+  padding-top: 44px
+  padding-bottom: 68px
+  background: #f5f5f5
+  h3
+    color: #171a1d
+    font-family: 'latobold'
+    font-size: 33px
+    line-height: 24px
+    margin: 0
+    margin-bottom: 25px
+  .say_wrap-review
+    display: flex
+    justify-content: space-between
+    .review_say-item
+      background: #ffffff
+      padding: 30px 20px 20px 30px
+      max-width: 360px
+      h6
+        color: #000000
+        font-family: 'latobold'
+        font-size: 18px
+        line-height: 36px
+        margin: 0
+      span
+        color: #000000
+        font-family: 'latolight'
+        font-size: 16px
+        line-height: 36px
+      p
+        color: #000000
+        font-family: 'latoregular'
+        font-size: 16px
+        line-height: 28px
+        max-width: 295px
 
 
 

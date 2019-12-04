@@ -34,6 +34,26 @@ p {
   margin: 0;
 }
 
+.large_button {
+  border: 1px solid #dbe1eb;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 8px 0px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.large_button span {
+  text-align: center;
+  color: #006bc2;
+  font-family: "latolight";
+  font-size: 14px;
+  line-height: 27px;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #006bc2;
+}
+
 header .top_head .logo img {
   max-width: 240px;
   height: auto;
@@ -401,6 +421,17 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
   font-size: 33px;
   line-height: 24px;
 }
+#how-run .wrap-how-run {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 #how-run .wrap-how-run .steps .step-item {
   background: url("../img/line_dashed.png") repeat-y 17px 50%;
   display: -webkit-box;
@@ -430,6 +461,8 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
   color: #ffffff;
   font-family: "latobold";
   font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 5px;
 }
 #how-run .wrap-how-run .steps .step-item .step-txt p {
   color: #ffffff;
@@ -437,6 +470,128 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
   font-size: 15px;
   max-width: 360px;
   line-height: 24px;
+}
+#how-run .wrap-how-run .video_description {
+  -webkit-box-shadow: 0 0 27px rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0 27px rgba(0, 0, 0, 0.17);
+}
+#how-run .wrap-how-run .video_description iframe {
+  display: block;
+  width: 650px;
+  max-width: 100%;
+  height: 365px;
+}
+
+#popular-category {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+#popular-category h3 {
+  color: #171a1d;
+  font-family: "latobold";
+  font-size: 33px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 45px;
+}
+#popular-category .wrap_popular-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#popular-category .wrap_popular-company .popular_company-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 25%;
+  margin-bottom: 25px;
+}
+#popular-category .wrap_popular-company .popular_company-item .popular_item-txt h5 {
+  color: #3c434c;
+  font-family: "latobold";
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+#popular-category .wrap_popular-company .popular_company-item .popular_item-txt ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#popular-category .wrap_popular-company .popular_company-item .popular_item-txt ul li {
+  margin-bottom: 10px;
+}
+#popular-category .wrap_popular-company .popular_company-item .popular_item-txt ul li a {
+  color: #006bc2;
+  font-family: "latolight";
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  line-height: 18px;
+}
+#popular-category .watch_all_categ {
+  margin-top: 15px;
+}
+
+#what_say {
+  padding-top: 44px;
+  padding-bottom: 68px;
+  background: #f5f5f5;
+}
+#what_say h3 {
+  color: #171a1d;
+  font-family: "latobold";
+  font-size: 33px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+#what_say .say_wrap-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#what_say .say_wrap-review .review_say-item {
+  background: #ffffff;
+  padding: 30px 20px 20px 30px;
+  max-width: 360px;
+}
+#what_say .say_wrap-review .review_say-item h6 {
+  color: #000000;
+  font-family: "latobold";
+  font-size: 18px;
+  line-height: 36px;
+  margin: 0;
+}
+#what_say .say_wrap-review .review_say-item span {
+  color: #000000;
+  font-family: "latolight";
+  font-size: 16px;
+  line-height: 36px;
+}
+#what_say .say_wrap-review .review_say-item p {
+  color: #000000;
+  font-family: "latoregular";
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 295px;
 }
 
 @media all and (max-width: 830px) {
