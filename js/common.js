@@ -8,6 +8,8 @@ $(function(){
     $('.say_wrap-review').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        prevArrow: '<img class="slick-prev" src="..//img/prev_arrow.png">',
+        nextArrow: '<img class="slick-next" src="..//img/next-arrow.png">',
         responsive: [
             {
                 breakpoint: 768,

@@ -67,7 +67,7 @@ header.search_head {
   padding-top: 15px;
 }
 header.search_head .top_line {
-  font-family: latolight;
+  font-family: "latolight";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +231,62 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
   text-align: center;
 }
 
+@media all and (max-width: 830px) {
+  header .main_head {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  header .main_head .logo {
+    margin-bottom: 0;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+
+  header .main_head .profile_icons {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  header .main_head .search {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 600px) {
+  .top_line .about_info {
+    display: none;
+  }
+
+  header .top_line .loc_pr ul li:first-child {
+    margin-left: 0px;
+  }
+}
+@media all and (max-width: 430px) {
+  header .main_head .search .search_controls .search_button button {
+    padding: 2px 8px;
+  }
+
+  header .main_head .search .search_controls .search_field input {
+    padding-right: 85px;
+  }
+
+  header .main_head .search .hint ul li {
+    padding: 5px 3px;
+    font-size: 8px;
+  }
+}
+@media all and (max-width: 360px) {
+  .main_head .logo img {
+    width: 180px;
+  }
+}
 header .top_head {
   padding: 5px 0px;
   display: -webkit-box;
@@ -242,6 +298,9 @@ header .top_head {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .top_head .mobile_bars {
+  display: none;
 }
 header .top_head .logo img {
   max-width: 240px;
@@ -293,6 +352,9 @@ header .top_head .user_concret {
       -ms-flex-align: center;
           align-items: center;
 }
+header .top_head .user_concret .user_marker {
+  margin-right: 15px;
+}
 header .top_head .user_concret .user_marker span {
   font-size: 14px;
   color: #1565c0;
@@ -300,6 +362,18 @@ header .top_head .user_concret .user_marker span {
 }
 header .top_head .user_concret .user_marker span i {
   font-size: 18px;
+}
+header .top_head .user_concret .user_account a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .top_head .user_concret .user_account a img {
+  margin-right: 10px;
 }
 
 #banner_main {
@@ -389,6 +463,9 @@ header .top_head .user_concret .user_marker span i {
   font-family: "latobold";
   font-size: 20px;
   line-height: 30px;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
   background: -webkit-gradient(linear, left bottom, left top, from(#1565c0), to(#2779d6));
   background: linear-gradient(to top, #1565c0 0%, #2779d6 100%);
 }
@@ -504,6 +581,8 @@ header .top_head .user_concret .user_marker span i {
   background-color: #f5f5f5;
   width: 35px;
   height: 35px;
+  min-width: 35px;
+  min-height: 35px;
   border-radius: 50%;
   text-align: center;
 }
@@ -597,7 +676,8 @@ header .top_head .user_concret .user_marker span i {
   font-family: "latolight";
   font-size: 16px;
   line-height: 18px;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid #006bc2;
   line-height: 18px;
 }
 #popular-category .watch_all_categ {
@@ -609,11 +689,14 @@ header .top_head .user_concret .user_marker span i {
   padding-bottom: 68px;
   background: #f5f5f5;
 }
+#what_say .slick-prev, #what_say .slick-next {
+  width: auto;
+  height: auto;
+}
 #what_say h3 {
   color: #171a1d;
   font-family: "latobold";
   font-size: 33px;
-  line-height: 24px;
   margin: 0;
   margin-bottom: 25px;
 }
@@ -629,19 +712,30 @@ header .top_head .user_concret .user_marker span i {
   outline: none;
   background: #ffffff;
   padding: 30px 20px 20px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 380px;
 }
 #what_say .say_wrap-review .review_say-item h6 {
   color: #000000;
   font-family: "latobold";
   font-size: 18px;
-  line-height: 36px;
   margin: 0;
 }
 #what_say .say_wrap-review .review_say-item span {
   color: #000000;
   font-family: "latolight";
   font-size: 16px;
-  line-height: 36px;
+  display: block;
+  margin: 10px 0px;
 }
 #what_say .say_wrap-review .review_say-item p {
   color: #000000;
@@ -649,6 +743,13 @@ header .top_head .user_concret .user_marker span i {
   font-size: 16px;
   line-height: 28px;
   max-width: 295px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#what_say .say_wrap-review .review_say-item .review_date {
+  color: #afafaf;
+  font-family: "latoregular";
+  font-size: 15px;
 }
 
 footer {
@@ -714,60 +815,129 @@ footer .footer-list .foot_feedback span {
   font-size: 16px;
 }
 
-@media all and (max-width: 830px) {
-  header .main_head {
+@media all and (max-width: 1185px) {
+  #how-run .wrap-how-run .video_description iframe {
+    width: 465px;
+    height: 265px;
+  }
+}
+@media all and (max-width: 992px) {
+  #how-run .wrap-how-run {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #how-run .wrap-how-run .steps .step-item .step-txt p {
+    max-width: 100%;
+  }
+
+  #how-run .wrap-how-run .video_description {
+    width: 100%;
+  }
+
+  #how-run .wrap-how-run .video_description iframe {
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+  }
+}
+@media all and (max-width: 940px) {
+  header .top_head .user_concret {
+    display: none;
+  }
+
+  header .top_head nav {
+    display: none;
+  }
+
+  header .top_head .mobile_bars {
+    display: block;
+    margin-top: -8px;
+  }
+  header .top_head .mobile_bars i {
+    font-size: 30px;
+    outline: none;
+  }
+}
+@media all and (max-width: 880px) {
+  #popular-auto .popular-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
-  header .main_head .logo {
-    margin-bottom: 0;
-    -webkit-box-ordinal-group: 1;
-        -ms-flex-order: 0;
-            order: 0;
-  }
-
-  header .main_head .profile_icons {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-
-  header .main_head .search {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-top: 10px;
-    margin-left: 0;
-    margin-right: 0;
+  .popular_item {
+    margin-bottom: 15px;
+    width: 33%;
   }
 }
-@media all and (max-width: 600px) {
-  .top_line .about_info {
-    display: none;
+@media all and (max-width: 550px) {
+  #banner_main .search_repair .rep_advantages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
-  header .top_line .loc_pr ul li:first-child {
-    margin-left: 0px;
+  #banner_main .search_repair .rep_advantages .rep_advantages-item {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  #banner_main .search_repair .search_field button {
+    font-size: 15px;
+  }
+
+  #banner_main .search_repair .search_field {
+    margin-bottom: 50px;
+  }
+
+  #banner_main {
+    padding-top: 75px;
+    padding-bottom: 45px;
+  }
+
+  #banner_main .search_repair .hint ul li {
+    padding: 9px 5px;
+  }
+
+  #banner_main h1 {
+    font-size: 40px;
+  }
+
+  #banner_main .search_repair .hint ul li {
+    font-size: 10px;
   }
 }
-@media all and (max-width: 430px) {
-  header .main_head .search .search_controls .search_button button {
-    padding: 2px 8px;
+@media all and (max-width: 440px) {
+  #banner_main .search_repair .search_field input {
+    height: auto;
+    padding: 10px 20px;
   }
 
-  header .main_head .search .search_controls .search_field input {
-    padding-right: 85px;
+  #banner_main .search_repair .search_field button {
+    font-size: 11px;
   }
 
-  header .main_head .search .hint ul li {
-    padding: 5px 3px;
+  #banner_main .search_repair .hint ul li {
     font-size: 8px;
   }
-}
-@media all and (max-width: 360px) {
-  .main_head .logo img {
-    width: 180px;
+
+  #banner_main h1 {
+    font-size: 30px;
+  }
+
+  #popular-auto h3 {
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  #how-run .wrap-how-run .video_description iframe {
+    min-height: 250px;
   }
 }
 
