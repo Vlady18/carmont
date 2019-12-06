@@ -844,6 +844,10 @@ footer .footer-list .foot_feedback span {
   }
 }
 @media all and (max-width: 940px) {
+  footer .footer-list .foot_navigation ul {
+    margin-right: 20px;
+  }
+
   header .top_head .user_concret {
     display: none;
   }
@@ -862,6 +866,11 @@ footer .footer-list .foot_feedback span {
   }
 }
 @media all and (max-width: 880px) {
+  footer .footer-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   #popular-auto .popular-list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -876,7 +885,56 @@ footer .footer-list .foot_feedback span {
     width: 33%;
   }
 }
+@media all and (max-width: 768px) {
+  #what_say .say_wrap-review .review_say-item p {
+    min-height: 340px;
+  }
+
+  #what_say .say_wrap-review .review_say-item {
+    min-height: auto;
+  }
+}
+@media all and (max-width: 680px) {
+  footer .footer-list .policy p {
+    max-width: 100%;
+  }
+}
 @media all and (max-width: 550px) {
+  .foot_feedback {
+    margin-top: 20px;
+  }
+
+  #what_say .say_wrap-review .review_say-item p {
+    min-height: auto;
+  }
+
+  #what_say .say_wrap-review .review_say-item p {
+    max-width: 100%;
+  }
+
+  .slick-prev, .slick-next {
+    top: 107%;
+  }
+
+  .slick-next {
+    right: 40%;
+  }
+
+  .slick-prev {
+    left: 40%;
+  }
+
+  #what_say .say_wrap-review .review_say-item__offer {
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+  }
+
+  #what_say .say_wrap-review .review_say-item {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   #banner_main .search_repair .rep_advantages {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
