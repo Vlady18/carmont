@@ -815,6 +815,29 @@ footer .footer-list .foot_feedback span {
   font-size: 16px;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.95);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.overlay.add_block {
+  display: block;
+}
+
+header .top_head .mobile_bars {
+  z-index: 99;
+}
+
+header .top_head .logo {
+  z-index: 99;
+}
+
 @media all and (max-width: 1185px) {
   #how-run .wrap-how-run .video_description iframe {
     width: 465px;
@@ -844,6 +867,16 @@ footer .footer-list .foot_feedback span {
   }
 }
 @media all and (max-width: 940px) {
+  #banner_main {
+    padding-top: 150px;
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+  }
+
   footer .footer-list .foot_navigation ul {
     margin-right: 20px;
   }
@@ -853,6 +886,38 @@ footer .footer-list .foot_feedback span {
   }
 
   header .top_head nav {
+    display: none;
+    width: 90%;
+    height: 100%;
+    position: fixed;
+    top: 45%;
+    margin: 0 auto;
+  }
+
+  header .top_head nav.add_block {
+    display: block;
+  }
+
+  header .top_head nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  header .top_head nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  header .top_head nav ul li a {
+    font-size: 25px;
+  }
+
+  header .top_head nav ul li a:after {
     display: none;
   }
 
@@ -900,6 +965,10 @@ footer .footer-list .foot_feedback span {
   }
 }
 @media all and (max-width: 550px) {
+  #what_say .container {
+    width: 85%;
+  }
+
   .foot_feedback {
     margin-top: 20px;
   }
@@ -912,16 +981,12 @@ footer .footer-list .foot_feedback span {
     max-width: 100%;
   }
 
-  .slick-prev, .slick-next {
-    top: 107%;
-  }
-
   .slick-next {
-    right: 40%;
+    right: -20px;
   }
 
   .slick-prev {
-    left: 40%;
+    left: -20px;
   }
 
   #what_say .say_wrap-review .review_say-item__offer {
@@ -959,7 +1024,7 @@ footer .footer-list .foot_feedback span {
   }
 
   #banner_main {
-    padding-top: 75px;
+    padding-top: 140px;
     padding-bottom: 45px;
   }
 
@@ -1023,6 +1088,11 @@ footer .footer-list .foot_feedback span {
 
   #how-run .wrap-how-run .video_description iframe {
     min-height: 250px;
+  }
+}
+@media all and (max-width: 350px) {
+  #what_say h3 {
+    font-size: 30px;
   }
 }
 

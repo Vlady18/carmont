@@ -5,6 +5,10 @@ $(function(){
         var newPlaceholder = $(this).data('place');
         $('.search_field input').attr('placeholder', newPlaceholder);
     });
+    $('.mobile_bars').click(function(){
+        $('.overlay').toggleClass('add_block');
+        $('header .top_head nav').toggleClass('add_block');
+    })
     $('.say_wrap-review').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
