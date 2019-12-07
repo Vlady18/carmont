@@ -189,16 +189,30 @@ header.search_head
     order: 1
   header .main_head .search
     order: 2
-    margin-top: 10px
+    margin-top: 20px
     margin-left: 0
     margin-right: 0
 @media all and (max-width: 600px)
+
   .top_line .about_info
     display: none
   header .top_line .loc_pr ul li
     &:first-child
       margin-left: 0px
+@media all and (max-width: 500px)
+  header.search_head .main_head .search .hint ul li
+    padding: 5px 5px
+  header.search_head .main_head .search
+    margin-left: 0px
+    margin-right: 0px
 @media all and (max-width: 430px)
+  header.search_head .main_head .search .hint ul li
+    font-size: 8px
+  header.search_head .main_head .search .search_controls .search_field input
+    padding-right: 85px
+  header.search_head .main_head .search .search_controls .search_button button
+    padding: 2px 5px
+
   header .main_head .search .search_controls .search_button button
     padding: 2px 8px
   header .main_head .search .search_controls .search_field input
@@ -211,7 +225,7 @@ header.search_head
     width: 180px
 
 //            Index.html
-header
+header.main_page
   .top_head
     padding: 5px 0px
     display: flex
@@ -638,9 +652,9 @@ footer
   overflow: hidden
 .overlay.add_block
   display: block
-header .top_head .mobile_bars
+header.main_page .top_head .mobile_bars
   z-index: 99
-header .top_head .logo
+header.main_page .top_head .logo
   z-index: 99
 @media all and (max-width: 1185px)
   #how-run .wrap-how-run .video_description iframe
@@ -661,34 +675,34 @@ header .top_head .logo
 @media all and (max-width: 940px)
   #banner_main
     padding-top: 150px
-  header
+  header.main_page
     position: fixed
     width: 100%
     background: #fff
   footer .footer-list .foot_navigation ul
     margin-right: 20px
-  header .top_head .user_concret
+  header.main_page .top_head .user_concret
     display: none
-  header .top_head nav
+  header.main_page .top_head nav
     display: none
     width: 90%
     height: 100%
     position: fixed
     top: 45%
     margin: 0 auto
-  header .top_head nav.add_block
+  header.main_page .top_head nav.add_block
     display: block
-  header .top_head nav ul
+  header.main_page .top_head nav ul
     flex-direction: column
     align-items: center
-  header .top_head nav ul li
+  header.main_page .top_head nav ul li
     margin-right: 0
     margin-bottom: 10px
-  header .top_head nav ul li a
+  header.main_page .top_head nav ul li a
     font-size: 25px
-  header .top_head nav ul li a:after
+  header.main_page .top_head nav ul li a:after
     display: none
-  header .top_head .mobile_bars
+  header.main_page .top_head .mobile_bars
     display: block
     margin-top: -8px
     i
