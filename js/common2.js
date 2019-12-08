@@ -69,6 +69,9 @@ $(document).ready(function(){
     $('.spare_ob').on('click', '.close_spare-red', function(){
         console.log('0')
         $(this).parent().parent().remove();
+        if($('.spares_txt').length === 1){
+            $('.close_spare-red').removeClass('dbbl')
+        }
     })
     $('#checkbox2').click(function() {
         if ($(this).is(':checked')) {
@@ -81,6 +84,7 @@ $(document).ready(function(){
     $(".need_spare-check .checkbox").checked
     var i_count = 0;
     $( ".add_spare" ).click(function(event) {
+        $('.close_spare-red').addClass('dbbl')
         i_count++;
         event.preventDefault()
         var list = $("<div class=\"spares_txt\">\n" +
@@ -103,7 +107,7 @@ $(document).ready(function(){
             "                                            <input type=\"radio\" name=" + i_count + "state\" id=" + i_count + "old\">\n" +
             "                                            <label for=" + i_count + "old\">Только б/у</label>\n" +
             "                                        </div>\n" +
-            "                                        <div class=\"close_spare-red\">\n" +
+            "                                        <div class=\"close_spare-red dbbl\">\n" +
             "                                            <img src=\"img/red_close.png\" alt=\"\">\n" +
             "                                        </div>\n" +
             "                                    </div>\n" +

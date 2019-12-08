@@ -54,6 +54,11 @@
 
 .close_spare-red {
   cursor: pointer;
+  display: none;
+}
+
+.close_spare-red.dbbl {
+  display: block;
 }
 
 .transparent_overlay.dbbl {
