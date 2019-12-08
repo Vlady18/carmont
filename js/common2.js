@@ -43,13 +43,15 @@ $(document).ready(function(){
         $('#vl_form .wrap_form .first_step').toggleClass('dbbl')
     });
     $( ".back_first" ).click(function(event) {
-        event.preventDefault()
+        event.preventDefault();
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
         $('.dark_overlay').removeClass('dbbl');
+        $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl')
     });
     $( ".close_two-step" ).click(function(event) {
-        event.preventDefault()
+        event.preventDefault();
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
+        $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl')
         $('.dark_overlay').removeClass('dbbl');
     });
     $("#vl_form").on("click",".img_form-a", function (event) {

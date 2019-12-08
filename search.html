@@ -8,10 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style3.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="search_head">
+<div class="dark_overlay">
+</div>
+<div class="transparent_overlay"></div>
+<header class="search_head " id="vl_form">
     <div class="container">
         <div class="top_line">
             <div class="about_info">
@@ -33,22 +37,256 @@
                 <a href="#"><img src="img/logo.png" alt="logo">
                 </a>
             </div>
-            <div class="search">
+            <div class="search_repair">
                 <div class="hint">
                     <ul>
-                        <li data-place="Введите артикул запчасти" class="active_search"><a href="#">Поиск по артикулу</a></li>
-                        <li data-place="Введите VIN"><a href="#">VIN поиск</a></li>
-                        <li data-place="Введите название запчасти"><a href="#">Заявка на запчасть/ремонт</a></li>
+                        <li class="active_search" data-place="Введите артикул запчасти" class="active_search"><a href="#">Поиск по артикулу</a></li>
+                        <li class="VIN" data-place="Введите VIN или FRAME"><a href="#">VIN поиск</a></li>
+                        <li class="steps_form-search_page" data-place="Введите название запчасти"><a href="#">Заявка на запчасть/ремонт</a></li>
                     </ul>
                 </div>
-                <div class="search_controls">
-                    <div class="search_field">
+                <form class="search_field">
+                    <div class="relet_inp">
                         <input type="text" placeholder="Введите артикул запчасти">
+                        <a href="#" class="how" title="Как узнать - VIN/Frame">Как узнать VIN/Frame? <i class="fa fa-question-circle" aria-hidden="true"></i></a>
                     </div>
-                    <div class="search_button">
-                        <button><i class="fa fa-search" aria-hidden="true"></i> Найти</button>
+                    <button><i class="fa fa-search" aria-hidden="true"></i> Найти</button>
+                </form>
+                <form class="zayavka wrap_form">
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Марка</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Модель</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Год</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Тип кузова</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Тип двигателя</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Обьем</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <input type="hidden">
+                        <span class="title_select">Мощность</span>
+                        <span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                        <div class="option_wrapper">
+                            <ul>
+                                <li>Volkswagen</li>
+                                <li>Audi</li>
+                                <li>BMW</li>
+                                <li>Renault</li>
+                                <li>Toyota</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="continue_step">
+                        Далее
+                    </button>
+                    <div class="second_step">
+                        <div class="close_two-step">
+                            <img src="img/close2step.png" alt="">
+                        </div>
+                        <!--                    <div class="head_form">-->
+                        <!--                        <h5>-->
+                        <!--                            Оставить заявку на ремонт-->
+                        <!--                        </h5>-->
+                        <!--                        <p>(шаг 2 из 2)</p>-->
+                        <!--                    </div>-->
+                        <div class="form_body">
+                            <div class="spares_hand">
+                                <div class="need_spare-check">
+                                    <input type="checkbox" checked class="checkbox" id="checkbox" />
+                                    <label for="checkbox">Нужные запчасти:</label>
+                                </div>
+                                <div class="spare_ob dbbl">
+                                    <div class="list_spares-all">
+                                        <div class="spares_txt">
+                                            <div class="spare_input">
+                                                <input type="text" name="spare" placeholder="Наименование запчасти">
+                                            </div>
+                                            <div class="spare_input">
+                                                <input type="text" name="nomer" placeholder="Оригинальный номер">
+                                            </div>
+                                            <div class="check-material">
+                                                <div class="spare_radio-item">
+                                                    <input type="radio" checked name="state" id="different">
+                                                    <label for="different">Любая</label>
+                                                </div>
+                                                <div class="spare_radio-item">
+                                                    <input type="radio" name="state" id="new">
+                                                    <label for="new">Только новая</label>
+                                                </div>
+                                                <div class="spare_radio-item">
+                                                    <input type="radio" name="state" id="old">
+                                                    <label for="old">Только б/у</label>
+                                                </div>
+                                                <div class="close_spare-red">
+                                                    <img src="img/red_close.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="add_spare">
+                                        <button><i class="fa fa-plus-circle" aria-hidden="true"></i> Добавить запчасть</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spares_auto">
+                                <div class="spares_auto-head">
+                                    <div class="need_spare-check">
+                                        <input type="checkbox" class="checkbox" id="checkbox2" />
+                                        <label for="checkbox2">Нужные работы:</label>
+                                    </div>
+                                    <div class="spare_time">
+                                        <p><input type="text" id="datepicker" placeholder="Выберите дату"></p>
+                                        <img src="img/calendar.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="work_ob">
+                                    <div class="main_list">
+                                        <div class="select_li">
+                                            Выбрать из списка
+                                            <span>
+										<i class="fa fa-chevron-down" aria-hidden="true"></i>
+									</span>
+                                        </div>
+                                        <ul class="category">
+                                            <li>
+                                                Выхлопная система <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                                                <ul class="subcategory">
+                                                    <li><input type="checkbox" id="1"> <label for="1">Антибактериальная обработка</label></li>
+                                                    <li><input type="checkbox" id="2"> <label for="2">Диагностика кондиционера</label></li>
+                                                    <li><input type="checkbox" id="3"> <label for="3">Замена испарителя</label></li>
+                                                    <li><input type="checkbox" id="4"> <label for="4">Замена компрессера</label></li>
+                                                    <li><input type="checkbox" id="5"> <label for="5">Замена охлаждающей жидкости (антифриз)</label></li>
+                                                    <li><input type="checkbox" id="6"> <label for="6">Замена патрубков системы охлаждения</label></li>
+                                                    <button>Выбрать</button>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Двигатель <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+                                                <ul class="subcategory">
+                                                    <li><input type="checkbox" id="7"> <label for="7">Антибактериальная обработка</label></li>
+                                                    <li><input type="checkbox" id="8"> <label for="8">Диагностика кондиционера</label></li>
+                                                    <li><input type="checkbox" id="9"> <label for="9">Замена испарителя</label></li>
+                                                    <button>Выбрать</button>
+
+                                                </ul>
+                                            </li>
+                                            <li>Диагностика <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Замена жидкостей <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                            <li>Подвеска <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="enter_handler">
+                                        <textarea name="spare_enter" placeholder="Ввести вручную"></textarea>
+                                    </div>
+                                </div>
+
+
+                                <div class="wrap_photo">
+                                    <div id="filelist"></div>
+                                    <input accept="image/*" id="fileElem" multiple="" onchange="handleFiles(this.files)" style="display:none" type="file">
+                                    <a href="#" id="fileSelect">Прикрепить фото</a>
+                                    <!--								<button>-->
+                                    <!--									Прикрепить фото-->
+                                    <!--								</button>-->
+                                </div>
+                                <div class="comments">
+                                    <!--								<span id="outputMulti"></span>-->
+                                    <textarea name="comments" placeholder="Комментарии"></textarea>
+                                </div>
+                                <div class="button_control">
+                                    <div class="back_but">
+                                        <!--									<button class="back_first">Вернуться на шаг 1</button>-->
+                                        <a href="#vl_form" class="back_first">Вернуться на шаг 1</a>
+                                    </div>
+                                    <div class="send_button">
+                                        <button>Отправить заявку</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
             <div class="profile_icons">
                 <div class="profile_icons-cart">
@@ -64,10 +302,11 @@
         </div>
     </div>
 </header>
-<script
-        src="https://code.jquery.com/jquery-3.4.0.min.js"
-        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-        crossorigin="anonymous"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/ru.js"></script>
+<script src="js/common2.js"></script>
 <script src="js/common.js"></script>
 </body>
 </html>

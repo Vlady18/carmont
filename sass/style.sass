@@ -93,8 +93,20 @@ p
 
 
 //SEARCH_____PAGE
+
+#vl_form.search_head .wrap_form .second_step
+  position: static
+  transform: none
+  display: block
+  width: 100%
+  max-width: 100%
+#vl_form.search_head .wrap_form .form_body
+  padding: 0px
+
+
 header.search_head
   padding-top: 15px
+  padding-bottom: 15px
   .top_line
     font-family: 'latolight'
     display: flex
@@ -134,71 +146,57 @@ header.search_head
       margin-bottom: -10px
       img
         display: block
-    .search
-      position: relative
-      margin-left: 20px
-      margin-right: 30px
+    .search_repair
+      max-width: 755px
       width: 100%
-      //max-width: 760px
+      .zayavka.dbbl
+        display: flex
+      .zayavka
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        margin: 0 auto
+        width: 90%
+        padding: 50px
+        z-index: 200
+        max-width: 1140px
+        background: #fff
+        .select
+          border: 1px solid #b8b8b8
+          .option_wrapper
+            z-index: 999
+        button.continue_step
+          display: none
+
       .hint
         margin-bottom: 10px
-        ul
-          list-style: none
-          display: flex
-          margin: 0
-          padding: 0
-          li
-            color: #535353
-            font-family: 'latoregular'
-            font-size: 10px
-            padding: 5px 10px
-            text-transform: uppercase
-            a
-              color: #535353
-              text-decoration: none
-              border-bottom: 1px solid #535353
-              padding-bottom: 2px
-
-          li.active_search
-            background: #1565c0
-            border-radius: 6px
-            a
-              border-bottom: 0
-              color: #fff
-              text-decoration: none
-      .search_controls
-        position: relative
-        .search_field
-          //position: relative
-          input
-            border: 1px solid #b8b8b8
-            color: #3e4043
-            font-family: 'latolight'
-            font-size: 14px
-            line-height: 30px
-            width: 100%
-            padding: 2px 17px
-            padding-right: 140px
-            border-radius: 5px
-            outline: none
-        .search_button
-          position: absolute
-          top: 0
-          right: 0
-          button
-            color: #ffffff
-            font-family: 'latobold'
-            font-size: 16px
-            line-height: 30px
-            border: 1px solid #1565c0
-            background: #1565c0
-            //border: 0
-            outline: none
-            cursor: pointer
-            padding: 2px 30px
-            border-radius: 5px
-            border-top-left-radius: 0
-            border-bottom-left-radius: 0
+      .hint ul li.active_search a
+        color: #fff
+      .hint ul li
+        padding: 5px 10px
+        font-size: 10px
+      .hint ul li a
+        padding-bottom: 3px
+        font-family: 'latoregular'
+        font-size: 10px
+        text-transform: uppercase
+        color: #535353
+      .search_field
+        margin-bottom: 0
+        width: 100%
+        input
+          font-size: 14px
+          padding: 0px 15px
+        button
+          font-size: 16px
+          width: 131px
+        .relet_inp
+          max-width: 620px
+          width: 100%
+          height: 36px
+        input
+          box-shadow: none
+          border: 1px solid #b8b8b8
     .profile_icons
       display: flex
       a
@@ -222,51 +220,129 @@ header.search_head
             border-radius: 50%
             color: #fff
             text-align: center
-//            MEDIA_QUERY_SEARCH.HTML
-@media all and (max-width: 830px)
-  header .main_head
+// Text style for "VIN поиск"
+  color: #535353
+    //.search
+    //  position: relative
+    //  margin-left: 20px
+    //  margin-right: 30px
+    //  width: 100%
+    //  //max-width: 760px
+    //  .hint
+    //    margin-bottom: 10px
+    //    ul
+    //      list-style: none
+    //      display: flex
+    //      margin: 0
+    //      padding: 0
+    //      li
+    //        color: #535353
+    //        font-family: 'latoregular'
+    //        font-size: 10px
+    //        padding: 5px 10px
+    //        text-transform: uppercase
+    //        a
+    //          color: #535353
+    //          text-decoration: none
+    //          border-bottom: 1px solid #535353
+    //          padding-bottom: 2px
+    //
+    //      li.active_search
+    //        background: #1565c0
+    //        border-radius: 6px
+    //        a
+    //          border-bottom: 0
+    //          color: #fff
+    //          text-decoration: none
+    //  .search_controls
+    //    position: relative
+    //    .search_field
+    //      //position: relative
+    //      input
+    //        border: 1px solid #b8b8b8
+    //        color: #3e4043
+    //        font-family: 'latolight'
+    //        font-size: 14px
+    //        line-height: 30px
+    //        width: 100%
+    //        padding: 2px 17px
+    //        padding-right: 140px
+    //        border-radius: 5px
+    //        outline: none
+    //    .search_button
+    //      position: absolute
+    //      top: 0
+    //      right: 0
+    //      button
+    //        color: #ffffff
+    //        font-family: 'latobold'
+    //        font-size: 16px
+    //        line-height: 30px
+    //        border: 1px solid #1565c0
+    //        background: #1565c0
+    //        //border: 0
+    //        outline: none
+    //        cursor: pointer
+    //        padding: 2px 30px
+    //        border-radius: 5px
+    //        border-top-left-radius: 0
+    //        border-bottom-left-radius: 0
+
+@media all and (max-width: 1195px)
+  header.search_head .main_head .search_repair
+    margin: 0px 10px
+  header.search_head .main_head .search_repair .search_field a.how
+    font-size: 10px
+@media all and (max-width: 895px)
+  header.search_head .main_head .search_repair .search_field a.how.dbbl
+    display: none
+@media all and (max-width: 800px)
+  header.search_head .main_head
     flex-wrap: wrap
-  header .main_head .logo
-    margin-bottom: 0
+    align-items: center
+  header.search_head .main_head .logo
     order: 0
-  header .main_head .profile_icons
-    order: 1
-  header .main_head .search
+  header.search_head .main_head .search_repair
     order: 2
-    margin-top: 20px
+  header.search_head .main_head .profile_icons
+    order: 1
+  header.search_head .main_head .logo
+    margin-bottom: 10px
+@media all and (max-width: 620px)
+  header.search_head .top_line .about_info ul li
+    margin-right: 6px
+  header.search_head .top_line .loc_pr ul li
+    margin-left: 6px
+@media all and (max-width: 510px)
+  header.search_head .main_head .search_repair .zayavka
+    justify-content: center
+  header.search_head .top_line .about_info ul li a
+    font-size: 11px
+  header.search_head .top_line .loc_pr ul li a
+    font-size: 11px
+  header.search_head .main_head .search_repair
     margin-left: 0
     margin-right: 0
-@media all and (max-width: 600px)
-
-  .top_line .about_info
-    display: none
-  header .top_line .loc_pr ul li
-    &:first-child
-      margin-left: 0px
-@media all and (max-width: 500px)
-  header.search_head .main_head .search .hint ul li
-    padding: 5px 5px
-  header.search_head .main_head .search
-    margin-left: 0px
-    margin-right: 0px
 @media all and (max-width: 430px)
-  header.search_head .main_head .search .hint ul li
+  header.search_head .main_head .search_repair .hint ul li
+    padding: 5px 2px
+  header.search_head .main_head .search_repair .hint ul li a
     font-size: 8px
-  header.search_head .main_head .search .search_controls .search_field input
-    padding-right: 85px
-  header.search_head .main_head .search .search_controls .search_button button
-    padding: 2px 5px
-
-  header .main_head .search .search_controls .search_button button
-    padding: 2px 8px
-  header .main_head .search .search_controls .search_field input
-    padding-right: 85px
-  header .main_head .search .hint ul li
-    padding: 5px 3px
-    font-size: 8px
+@media all and (max-width: 410px)
+  header.search_head .top_line .loc_pr ul li
+    &:first-child
+      display: none
 @media all and (max-width: 360px)
-  .main_head .logo img
-    width: 180px
+  header.search_head .main_head .logo
+    max-width: 190px
+    img
+      max-width: 100%
+  header.search_head .main_head .search_repair .search_field button
+    width: 105px
+    font-size: 14px
+
+
+
 
 //            Index.html
 header.main_page
@@ -340,166 +416,166 @@ header.main_page
     font-family: "latosemibold"
     margin-bottom: 55px
     font-size: 46px
-  .search_repair
+.search_repair
+  //margin: 0 auto
+  max-width: 1005px
+  margin: 0 auto
+  .hint
     //margin: 0 auto
-    max-width: 1005px
-    margin: 0 auto
-    .hint
-      //margin: 0 auto
+    margin-bottom: 15px
+    ul
+      list-style: none
+      display: flex
+      margin: 0
+      padding: 0
+      li
+        color: #535353
+        font-family: 'latoregular'
+        font-size: 12px
+        padding: 9px 15px
+        text-transform: uppercase
+        a
+          color: #fff
+          text-decoration: none
+          border-bottom: 1px solid #535353
+          padding-bottom: 9px
+      li.active_search
+        background: #1565c0
+        border-radius: 6px
+        a
+          border-bottom: 0
+          color: #fff
+          text-decoration: none
+  .zayavka.dbbl
+    display: flex
+  .zayavka
+    display: none
+    margin-bottom: 110px
+    //display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    button.continue_step
+      cursor: pointer
+      color: #ffffff
+      font-family: 'latosemibold'
+      font-size: 20px
       margin-bottom: 15px
+      max-width: 230px
+      width: 100%
+      border-radius: 5px
+      border: none
+      background: linear-gradient(to top, #1565c0 0%, #2779d6 100%)
+    .option_wrapper.dbbl
+      display: block
+    .option_wrapper
+      z-index: 99
+      max-height: 200px
+      height: auto
+      overflow-y: auto
+      display: none
+      position: absolute
+      width: 100%
+      left: 0
+      top: 100%
       ul
         list-style: none
-        display: flex
-        margin: 0
         padding: 0
+        margin: 0
         li
-          color: #535353
-          font-family: 'latoregular'
-          font-size: 12px
-          padding: 9px 15px
-          text-transform: uppercase
-          a
-            color: #fff
-            text-decoration: none
-            border-bottom: 1px solid #535353
-            padding-bottom: 9px
-        li.active_search
-          background: #1565c0
-          border-radius: 6px
-          a
-            border-bottom: 0
-            color: #fff
-            text-decoration: none
-    .zayavka.dbbl
+          background: #fff
+          border-top: 1px solid #3e4043
+          color: #3e4043
+          padding: 6px 10px
+          cursor: pointer
+    .select
+      cursor: pointer
+      margin-bottom: 15px
       display: flex
-    .zayavka
+      position: relative
+      align-items: center
+      justify-content: space-between
+      background: #fff
+      max-width: 230px
+      width: 100%
+      padding: 15px 20px
+      color: #3e4043
+      font-family: 'latolight'
+      font-size: 15px
+      border-radius: 5px
+      span
+        display: block
+  .search_field
+    display: flex
+    justify-content: center
+    margin-bottom: 150px
+    .relet_inp
+      position: relative
+      width: 810px
+      height: 60px
+    input
+      display: block
+      color: #3e4043
+      font-family: 'latolight'
+      font-size: 15px
+      line-height: 30px
+      box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.09)
+      background-color: #ffffff
+      border: 0
+      outline: none
+      width: 100%
+      height: 100%
+      padding: 0px 30px
+      border-radius: 5px
+      border-bottom-right-radius: 0
+      border-top-right-radius: 0
+    a.how
       display: none
-      margin-bottom: 110px
-      //display: flex
-      justify-content: space-between
-      flex-wrap: wrap
-      button.continue_step
-        cursor: pointer
-        color: #ffffff
-        font-family: 'latosemibold'
-        font-size: 20px
-        margin-bottom: 15px
-        max-width: 230px
-        width: 100%
-        border-radius: 5px
-        border: none
-        background: linear-gradient(to top, #1565c0 0%, #2779d6 100%)
-      .option_wrapper.dbbl
-        display: block
-      .option_wrapper
-        z-index: 99
-        max-height: 200px
-        height: auto
-        overflow-y: auto
-        display: none
-        position: absolute
-        width: 100%
-        left: 0
-        top: 100%
-        ul
-          list-style: none
-          padding: 0
+      color: #ababab
+      font-family: 'latolight'
+      font-size: 15px
+      position: absolute
+      text-decoration: none
+      right: 20px
+      top: 50%
+      transform: translateY(-50%)
+    a.how.dbbl
+      display: block
+    button
+      display: block
+      border: 0
+      outline: none
+      cursor: pointer
+      width: 195px
+      color: #ffffff
+      font-family: 'latobold'
+      font-size: 20px
+      line-height: 30px
+      border-radius: 5px
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+      background: linear-gradient(to top, #1565c0 0%, #2779d6 100%)
+  .rep_advantages
+    display: flex
+    justify-content: space-between
+    .rep_advantages-item
+      display: flex
+      .logo_adv
+        margin-top: 3px
+      .text_adv
+        margin-left: 20px
+        h6
+          color: #ffffff
+          font-family: 'latobold'
+          font-size: 18px
+          //line-height: 34px
           margin: 0
-          li
-            background: #fff
-            border-top: 1px solid #3e4043
-            color: #3e4043
-            padding: 6px 10px
-            cursor: pointer
-      .select
-        cursor: pointer
-        margin-bottom: 15px
-        display: flex
-        position: relative
-        align-items: center
-        justify-content: space-between
-        background: #fff
-        max-width: 230px
-        width: 100%
-        padding: 15px 20px
-        color: #3e4043
-        font-family: 'latolight'
-        font-size: 15px
-        border-radius: 5px
-        span
-          display: block
-    .search_field
-      display: flex
-      justify-content: center
-      margin-bottom: 150px
-      .relet_inp
-        position: relative
-        width: 810px
-        height: 60px
-      input
-        display: block
-        color: #3e4043
-        font-family: 'latolight'
-        font-size: 15px
-        line-height: 30px
-        box-shadow: 0 0 26px 1px rgba(0, 0, 0, 0.09)
-        background-color: #ffffff
-        border: 0
-        outline: none
-        width: 100%
-        height: 100%
-        padding: 0px 30px
-        border-radius: 5px
-        border-bottom-right-radius: 0
-        border-top-right-radius: 0
-      a.how
-        display: none
-        color: #ababab
-        font-family: 'latolight'
-        font-size: 15px
-        position: absolute
-        text-decoration: none
-        right: 20px
-        top: 50%
-        transform: translateY(-50%)
-      a.how.dbbl
-        display: block
-      button
-        display: block
-        border: 0
-        outline: none
-        cursor: pointer
-        width: 195px
-        color: #ffffff
-        font-family: 'latobold'
-        font-size: 20px
-        line-height: 30px
-        border-radius: 5px
-        border-bottom-left-radius: 0
-        border-top-left-radius: 0
-        background: linear-gradient(to top, #1565c0 0%, #2779d6 100%)
-    .rep_advantages
-      display: flex
-      justify-content: space-between
-      .rep_advantages-item
-        display: flex
-        .logo_adv
-          margin-top: 3px
-        .text_adv
-          margin-left: 20px
-          h6
-            color: #ffffff
-            font-family: 'latobold'
-            font-size: 18px
-            //line-height: 34px
-            margin: 0
-            margin-bottom: 10px
-          p
-            color: #ffffff
-            margin: 0
-            font-family: 'latolight'
-            font-size: 14px
-            line-height: 20px
+          margin-bottom: 10px
+        p
+          color: #ffffff
+          margin: 0
+          font-family: 'latolight'
+          font-size: 14px
+          line-height: 20px
 
 #popular-auto
   padding: 60px 0px

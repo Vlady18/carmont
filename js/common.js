@@ -11,9 +11,13 @@ $(function(){
     $('.relet_inp a.how').click(function(e){
         e.preventDefault();
     })
+    $('.steps_form-search_page').click(function(){
+        $('.dark_overlay').addClass('dbbl')
+        $('header.search_head .main_head .search_repair .zayavka').addClass('dbbl')
+    })
     $('.hint ul li').on('click', function(){
         $('.search_field').css('display', 'flex')
-        $('.zayavka').removeClass('dbbl');
+        $('#banner_main .zayavka').removeClass('dbbl');
         $('.relet_inp a.how').removeClass('dbbl');
         $('.hint ul li').removeClass('active_search');
         $(this).addClass('active_search');
