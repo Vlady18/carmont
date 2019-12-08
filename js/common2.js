@@ -22,12 +22,12 @@ $(document).ready(function(){
 
 
 
-    $("#vl_form").on("click",".back_first", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 1500);
-    });
+    // $("#vl_form").on("click",".back_first", function (event) {
+    //     event.preventDefault();
+    //     var id  = $(this).attr('href'),
+    //         top = $(id).offset().top;
+    //     $('body,html').animate({scrollTop: top}, 1500);
+    // });
     $( ".select_li" ).click(function() {
         $( '.category' ).toggleClass('dbbl');
         $(this).toggleClass('open');
@@ -45,7 +45,12 @@ $(document).ready(function(){
     $( ".back_first" ).click(function(event) {
         event.preventDefault()
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
-        $('#vl_form .wrap_form .first_step').toggleClass('dbbl');
+        $('.dark_overlay').removeClass('dbbl');
+    });
+    $( ".close_two-step" ).click(function(event) {
+        event.preventDefault()
+        $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
+        $('.dark_overlay').removeClass('dbbl');
     });
     $("#vl_form").on("click",".img_form-a", function (event) {
         event.preventDefault()

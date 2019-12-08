@@ -2,7 +2,8 @@
 $(function(){
     $('.continue_step').click(function(e){
         e.preventDefault();
-        $('#vl_form .wrap_form .second_step').css('display', 'block')
+        $('#vl_form .wrap_form .second_step').addClass('dbbl')
+        $('.dark_overlay').addClass('dbbl');
     })
     $('.hint ul li a').on('click', function(e){
         e.preventDefault();
@@ -28,8 +29,8 @@ $(function(){
         // if($(this).parent().hasClass('active_search')){}
         $('.relet_inp a.how').addClass('dbbl');
     });
-
     $('.zayavka .select').click(function(){
+        $('.transparent_overlay').addClass('dbbl')
         if($(this).find('.option_wrapper').hasClass('dbbl')){
             $(this).find('.option_wrapper').removeClass('dbbl');
         }
@@ -37,6 +38,10 @@ $(function(){
             $('.option_wrapper').removeClass('dbbl');
             $(this).find('.option_wrapper').addClass('dbbl');
         }
+    })
+    $('.transparent_overlay').click(function(){
+        $('.option_wrapper').removeClass('dbbl');
+        $(this).removeClass('dbbl');
     })
     $('.option_wrapper ul li').click(function(){
         let currentVar = $(this).text();

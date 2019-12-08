@@ -15,10 +15,44 @@
   src: url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf') format('truetype'), url('../fonts/SegoeUI.eot')
 #vl_form .wrap_form .second_step
   background: #fff
+  .close_two-step
+    position: absolute
+    right: 20px
+    top: 20px
+    cursor: pointer
+.dark_overlay
+  display: none
+  z-index: 105
+  position: fixed
+  background: rgba(0, 0, 0, .95)
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: hidden
+.transparent_overlay
+  display: none
+  z-index: 0
+  position: fixed
+  background: rgba(0, 0, 0, .0)
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  overflow: hidden
+.transparent_overlay.dbbl
+  display: block
+.dark_overlay.dbbl
+  display: block
 #vl_form .wrap_form .second_step
   position: absolute
+  top: 20%
   left: 50%
   transform: translate(-50%)
+  margin: 0 auto
+  width: 90%
+  max-width: 1140px
+  z-index: 205
 body
   margin: 0
   padding: 0
