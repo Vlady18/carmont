@@ -46,7 +46,7 @@ $(document).ready(function(){
         event.preventDefault();
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
         $('.dark_overlay').removeClass('dbbl');
-        $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl')
+        $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl');
     });
     $( ".close_two-step" ).click(function(event) {
         event.preventDefault();
