@@ -52,6 +52,10 @@
   overflow: hidden;
 }
 
+.close_spare-red {
+  cursor: pointer;
+}
+
 .transparent_overlay.dbbl {
   display: block;
 }

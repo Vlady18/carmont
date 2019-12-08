@@ -66,6 +66,10 @@ $(document).ready(function(){
             $("#vl_form .wrap_form .second_step .spare_ob").removeClass('dbbl')
         }
     });
+    $('.spare_ob').on('click', '.close_spare-red', function(){
+        console.log('0')
+        $(this).parent().parent().remove();
+    })
     $('#checkbox2').click(function() {
         if ($(this).is(':checked')) {
             $("#vl_form .wrap_form .second_step .work_ob").addClass('dbbl')
@@ -98,6 +102,9 @@ $(document).ready(function(){
             "                                        <div class=\"spare_radio-item\">\n" +
             "                                            <input type=\"radio\" name=" + i_count + "state\" id=" + i_count + "old\">\n" +
             "                                            <label for=" + i_count + "old\">Только б/у</label>\n" +
+            "                                        </div>\n" +
+            "                                        <div class=\"close_spare-red\">\n" +
+            "                                            <img src=\"img/red_close.png\" alt=\"\">\n" +
             "                                        </div>\n" +
             "                                    </div>\n" +
             "                                </div> ");
