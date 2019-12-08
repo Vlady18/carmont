@@ -13,7 +13,12 @@
 @font-face
   font-family: 'SegoeUI'
   src: url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf') format('truetype'), url('../fonts/SegoeUI.eot')
-
+#vl_form .wrap_form .second_step
+  background: #fff
+#vl_form .wrap_form .second_step
+  position: absolute
+  left: 50%
+  transform: translate(-50%)
 body
   margin: 0
   padding: 0
@@ -326,10 +331,72 @@ header.main_page
             border-bottom: 0
             color: #fff
             text-decoration: none
+    .zayavka.dbbl
+      display: flex
+    .zayavka
+      display: none
+      margin-bottom: 110px
+      //display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      button.continue_step
+        cursor: pointer
+        color: #ffffff
+        font-family: 'latosemibold'
+        font-size: 20px
+        margin-bottom: 15px
+        max-width: 230px
+        width: 100%
+        border-radius: 5px
+        border: none
+        background: linear-gradient(to top, #1565c0 0%, #2779d6 100%)
+      .option_wrapper.dbbl
+        display: block
+      .option_wrapper
+        z-index: 99
+        max-height: 200px
+        height: auto
+        overflow-y: auto
+        display: none
+        position: absolute
+        width: 100%
+        left: 0
+        top: 100%
+        ul
+          list-style: none
+          padding: 0
+          margin: 0
+          li
+            background: #fff
+            border-top: 1px solid #3e4043
+            color: #3e4043
+            padding: 6px 10px
+            cursor: pointer
+      .select
+        cursor: pointer
+        margin-bottom: 15px
+        display: flex
+        position: relative
+        align-items: center
+        justify-content: space-between
+        background: #fff
+        max-width: 230px
+        width: 100%
+        padding: 15px 20px
+        color: #3e4043
+        font-family: 'latolight'
+        font-size: 15px
+        border-radius: 5px
+        span
+          display: block
     .search_field
       display: flex
       justify-content: center
       margin-bottom: 150px
+      .relet_inp
+        position: relative
+        width: 810px
+        height: 60px
       input
         display: block
         color: #3e4043
@@ -340,12 +407,24 @@ header.main_page
         background-color: #ffffff
         border: 0
         outline: none
+        width: 100%
+        height: 100%
         padding: 0px 30px
-        height: 60px
         border-radius: 5px
         border-bottom-right-radius: 0
         border-top-right-radius: 0
-        width: 810px
+      a.how
+        display: none
+        color: #ababab
+        font-family: 'latolight'
+        font-size: 15px
+        position: absolute
+        text-decoration: none
+        right: 20px
+        top: 50%
+        transform: translateY(-50%)
+      a.how.dbbl
+        display: block
       button
         display: block
         border: 0
@@ -676,6 +755,7 @@ header.main_page .top_head .logo
   #banner_main
     padding-top: 150px
   header.main_page
+    z-index: 999
     position: fixed
     width: 100%
     background: #fff
@@ -727,10 +807,21 @@ header.main_page .top_head .logo
   #what_say .say_wrap-review .review_say-item
     min-height: auto
 @media all and (max-width: 680px)
+  #banner_main .search_repair .search_field a.how
+    display: none
+  #banner_main .search_repair .search_field a.how.dbbl
+    display: none
   footer .footer-list .policy p
     max-width: 100%
 
 @media all and (max-width: 550px)
+  #banner_main .search_repair .zayavka
+    justify-content: center
+  #banner_main .search_repair .zayavka .select
+    max-width: 100%
+  #banner_main .search_repair .zayavka button.continue_step
+    max-width: 100%
+    height: 47px
   #what_say .container
     width: 85%
   .foot_feedback
@@ -787,6 +878,8 @@ header.main_page .top_head .logo
       width: 100%
       text-align: center
 @media all and (max-width: 440px)
+  #banner_main .search_repair .search_field .relet_inp
+    height: auto
   #banner_main .search_repair .search_field input
     height: auto
     padding: 10px 20px

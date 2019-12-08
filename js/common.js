@@ -1,10 +1,52 @@
+
 $(function(){
+    $('.continue_step').click(function(e){
+        e.preventDefault();
+        $('#vl_form .wrap_form .second_step').css('display', 'block')
+    })
+    $('.hint ul li a').on('click', function(e){
+        e.preventDefault();
+    })
+    $('.relet_inp a.how').click(function(e){
+        e.preventDefault();
+    })
     $('.hint ul li').on('click', function(){
+        $('.search_field').css('display', 'flex')
+        $('.zayavka').removeClass('dbbl');
+        $('.relet_inp a.how').removeClass('dbbl');
         $('.hint ul li').removeClass('active_search');
         $(this).addClass('active_search');
         var newPlaceholder = $(this).data('place');
         $('.search_field input').attr('placeholder', newPlaceholder);
     });
+    $('.hint ul li.steps_form').on('click', function () {
+        $('.zayavka').addClass('dbbl');
+        $('.search_field').css('display', 'none')
+    })
+
+    $('.hint ul li.VIN').on('click', function(){
+        // if($(this).parent().hasClass('active_search')){}
+        $('.relet_inp a.how').addClass('dbbl');
+    });
+
+    $('.zayavka .select').click(function(){
+        if($(this).find('.option_wrapper').hasClass('dbbl')){
+            $(this).find('.option_wrapper').removeClass('dbbl');
+        }
+        else{
+            $('.option_wrapper').removeClass('dbbl');
+            $(this).find('.option_wrapper').addClass('dbbl');
+        }
+    })
+    $('.option_wrapper ul li').click(function(){
+        let currentVar = $(this).text();
+        $(this).parent().parent().siblings('input').val(currentVar);
+        $(this).addClass('active_li');
+        $(this).parent().parent().siblings('.title_select').html(currentVar);
+        // $(this).parent().parent().removeClass('dbbl');
+        // $('.option_wrapper').removeClass('dbbl');
+    });
+
     $('.mobile_bars').click(function(){
         $('.overlay').toggleClass('add_block');
         $('header .top_head nav').toggleClass('add_block');

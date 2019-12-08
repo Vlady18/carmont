@@ -18,6 +18,17 @@
   font-family: "SegoeUI";
   src: url("../fonts/SegoeUI.woff") format("woff"), url("../fonts/SegoeUI.ttf") format("truetype"), url("../fonts/SegoeUI.eot");
 }
+#vl_form .wrap_form .second_step {
+  background: #fff;
+}
+
+#vl_form .wrap_form .second_step {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -448,6 +459,84 @@ header.main_page .top_head .user_concret .user_account a img {
   color: #fff;
   text-decoration: none;
 }
+#banner_main .search_repair .zayavka.dbbl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#banner_main .search_repair .zayavka {
+  display: none;
+  margin-bottom: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#banner_main .search_repair .zayavka button.continue_step {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "latosemibold";
+  font-size: 20px;
+  margin-bottom: 15px;
+  max-width: 230px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1565c0), to(#2779d6));
+  background: linear-gradient(to top, #1565c0 0%, #2779d6 100%);
+}
+#banner_main .search_repair .zayavka .option_wrapper.dbbl {
+  display: block;
+}
+#banner_main .search_repair .zayavka .option_wrapper {
+  z-index: 99;
+  max-height: 200px;
+  height: auto;
+  overflow-y: auto;
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 100%;
+}
+#banner_main .search_repair .zayavka .option_wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#banner_main .search_repair .zayavka .option_wrapper ul li {
+  background: #fff;
+  border-top: 1px solid #3e4043;
+  color: #3e4043;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+#banner_main .search_repair .zayavka .select {
+  cursor: pointer;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #fff;
+  max-width: 230px;
+  width: 100%;
+  padding: 15px 20px;
+  color: #3e4043;
+  font-family: "latolight";
+  font-size: 15px;
+  border-radius: 5px;
+}
+#banner_main .search_repair .zayavka .select span {
+  display: block;
+}
 #banner_main .search_repair .search_field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,6 +545,11 @@ header.main_page .top_head .user_concret .user_account a img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 150px;
+}
+#banner_main .search_repair .search_field .relet_inp {
+  position: relative;
+  width: 810px;
+  height: 60px;
 }
 #banner_main .search_repair .search_field input {
   display: block;
@@ -468,12 +562,27 @@ header.main_page .top_head .user_concret .user_account a img {
   background-color: #ffffff;
   border: 0;
   outline: none;
+  width: 100%;
+  height: 100%;
   padding: 0px 30px;
-  height: 60px;
   border-radius: 5px;
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  width: 810px;
+}
+#banner_main .search_repair .search_field a.how {
+  display: none;
+  color: #ababab;
+  font-family: "latolight";
+  font-size: 15px;
+  position: absolute;
+  text-decoration: none;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#banner_main .search_repair .search_field a.how.dbbl {
+  display: block;
 }
 #banner_main .search_repair .search_field button {
   display: block;
@@ -894,6 +1003,7 @@ header.main_page .top_head .logo {
   }
 
   header.main_page {
+    z-index: 999;
     position: fixed;
     width: 100%;
     background: #fff;
@@ -982,11 +1092,34 @@ header.main_page .top_head .logo {
   }
 }
 @media all and (max-width: 680px) {
+  #banner_main .search_repair .search_field a.how {
+    display: none;
+  }
+
+  #banner_main .search_repair .search_field a.how.dbbl {
+    display: none;
+  }
+
   footer .footer-list .policy p {
     max-width: 100%;
   }
 }
 @media all and (max-width: 550px) {
+  #banner_main .search_repair .zayavka {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  #banner_main .search_repair .zayavka .select {
+    max-width: 100%;
+  }
+
+  #banner_main .search_repair .zayavka button.continue_step {
+    max-width: 100%;
+    height: 47px;
+  }
+
   #what_say .container {
     width: 85%;
   }
@@ -1086,6 +1219,10 @@ header.main_page .top_head .logo {
   }
 }
 @media all and (max-width: 440px) {
+  #banner_main .search_repair .search_field .relet_inp {
+    height: auto;
+  }
+
   #banner_main .search_repair .search_field input {
     height: auto;
     padding: 10px 20px;
