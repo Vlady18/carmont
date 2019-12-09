@@ -101,6 +101,18 @@ p {
   margin: 0;
 }
 
+#vl_form.search_head .wrap_form .second_step .spares_txt input {
+  width: 230px;
+  padding: 0px 10px;
+  padding-right: 6px;
+  height: 49px;
+}
+
+#vl_form.search_head .wrap_form .second_step .add_spare button {
+  width: 230px;
+  height: 49px;
+}
+
 .large_button {
   border: 1px solid #dbe1eb;
   text-align: center;
