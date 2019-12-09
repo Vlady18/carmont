@@ -422,6 +422,10 @@ header.main_page
     font-family: "latosemibold"
     margin-bottom: 55px
     font-size: 46px
+    text-align: left
+    max-width: 1005px
+    margin-left: auto
+    margin-right: auto
 .search_repair
   //margin: 0 auto
   max-width: 1005px
@@ -510,6 +514,7 @@ header.main_page
       border-radius: 5px
       span
         display: block
+        pointer-events: none
   .search_field
     display: flex
     justify-content: center
@@ -873,6 +878,9 @@ header.main_page .top_head .logo
     min-height: 350px
 
 @media all and (max-width: 940px)
+  #banner_main h1
+    max-width: 100%
+    text-align: center
   #banner_main
     padding-top: 150px
   header.main_page

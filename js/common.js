@@ -33,8 +33,8 @@ $(function(){
         // if($(this).parent().hasClass('active_search')){}
         $('.relet_inp a.how').addClass('dbbl');
     });
-    $('.zayavka .select').click(function(){
-        $('.transparent_overlay').addClass('dbbl')
+    $('.zayavka .select').click(function(e){
+        // $('.transparent_overlay').addClass('dbbl')
         if($(this).find('.option_wrapper').hasClass('dbbl')){
             $(this).find('.option_wrapper').removeClass('dbbl');
         }
@@ -42,12 +42,19 @@ $(function(){
             $('.option_wrapper').removeClass('dbbl');
             $(this).find('.option_wrapper').addClass('dbbl');
         }
+
     })
-    $('.transparent_overlay').click(function(){
+    $(document).on('click', function(event) {
+        if ($(event.target).is($('.zayavka .select') || $('.zayavka .select span') || $('.option_wrapper') || $('.option_wrapper li') )) return;
+
         $('.option_wrapper').removeClass('dbbl');
-        $(this).removeClass('dbbl');
     })
+    // $('.transparent_overlay').click(function(){
+    //     $('.option_wrapper').removeClass('dbbl');
+    //     $(this).removeClass('dbbl');
+    // })
     $('.option_wrapper ul li').click(function(){
+        $('.transparent_overlay').removeClass('dbbl');
         let currentVar = $(this).text();
         $(this).parent().parent().siblings('input').val(currentVar);
         $(this).addClass('active_li');

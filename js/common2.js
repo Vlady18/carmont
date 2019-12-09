@@ -46,10 +46,14 @@ $(document).ready(function(){
         event.preventDefault();
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
         $('.dark_overlay').removeClass('dbbl');
+        $('.steps_form-search_page').removeClass('active_search')
+        $('header.search_head .VIN').trigger('click');
         $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl');
     });
     $( ".close_two-step" ).click(function(event) {
         event.preventDefault();
+        $('.steps_form-search_page').removeClass('active_search')
+        $('header.search_head .VIN').trigger('click');
         $('#vl_form .wrap_form .second_step').toggleClass('dbbl');
         $('header.search_head .main_head .search_repair .zayavka').removeClass('dbbl')
         $('.dark_overlay').removeClass('dbbl');
