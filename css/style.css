@@ -137,6 +137,7 @@ p {
 
 #vl_form.search_head .wrap_form .form_body {
   padding: 0px;
+  margin-top: 40px;
 }
 
 header.search_head {
@@ -224,9 +225,13 @@ header.search_head .main_head .search_repair .zayavka {
   z-index: 200;
   max-width: 1140px;
   background: #fff;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 header.search_head .main_head .search_repair .zayavka .select {
   border: 1px solid #b8b8b8;
+  margin-right: 10px;
 }
 header.search_head .main_head .search_repair .zayavka .select .option_wrapper {
   z-index: 999;
@@ -362,6 +367,11 @@ header.search_head .main_head .profile_icons .profile_icons-cart a span {
 
   header.search_head .main_head .search_repair .zayavka .select {
     max-width: 100%;
+    margin-right: 0;
+  }
+
+  header.search_head .search_repair .zayavka span.head_name {
+    font-size: 23px;
   }
 }
 @media all and (max-width: 510px) {
@@ -566,6 +576,14 @@ header.main_page .top_head .user_concret .user_account a img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.search_repair .zayavka span.head_name {
+  width: 100%;
+  color: #171a1d;
+  margin: 0;
+  font-family: "latobold";
+  font-size: 25px;
+  margin-bottom: 15px;
 }
 .search_repair .zayavka button.continue_step {
   cursor: pointer;

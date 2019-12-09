@@ -102,6 +102,7 @@ p
   max-width: 100%
 #vl_form.search_head .wrap_form .form_body
   padding: 0px
+  margin-top: 40px
 
 
 header.search_head
@@ -161,8 +162,11 @@ header.search_head
         z-index: 200
         max-width: 1140px
         background: #fff
+        justify-content: flex-start
         .select
           border: 1px solid #b8b8b8
+          margin-right: 10px
+
           .option_wrapper
             z-index: 999
             border: 1px solid #3e4043
@@ -317,6 +321,9 @@ header.search_head
     margin-left: 6px
   header.search_head .main_head .search_repair .zayavka .select
     max-width: 100%
+    margin-right: 0
+  header.search_head .search_repair .zayavka span.head_name
+    font-size: 23px
 @media all and (max-width: 510px)
   //header.search_head .main_head .search_repair .zayavka
   //  justify-content: center
@@ -464,6 +471,14 @@ header.main_page
     //display: flex
     justify-content: space-between
     flex-wrap: wrap
+    span.head_name
+      width: 100%
+      color: #171a1d
+      margin: 0
+      font-family: 'latobold'
+      font-size: 25px
+      //line-height: 24px
+      margin-bottom: 15px
     button.continue_step
       cursor: pointer
       color: #ffffff
